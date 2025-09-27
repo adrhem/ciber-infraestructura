@@ -28,3 +28,5 @@ Tu programa deberá contener:
     Un evento click en el botón, que envía el formulario y que retorna la validación.
     Una expresión regular (Regex) que valide la regla propuesta.
 ```
+
+El proyecto se encuentra en la carpeta [HolaMundo](https://github.com/adrhem/ciber-infraestructura/tree/main/HolaMundo).
