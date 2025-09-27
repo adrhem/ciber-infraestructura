@@ -46,4 +46,6 @@ Debido a que mi entorno de desarrollo es MacOS, en lugar de descargar Visual Stu
    dotnet build -t:Run -f net9.0-maccatalyst
    ```
    Esto compilará y ejecutará tu aplicación en el simulador de Mac Catalyst.
+   <img width="590" height="474" alt="maui" src="https://github.com/user-attachments/assets/13b8149e-ef3f-4233-9d81-7ecf53cf3eb9" />
+   
 5. ¡Listo! Ahora tienes un entorno de desarrollo configurado para trabajar con .NET MAUI en MacOS utilizando Visual Studio Code.
