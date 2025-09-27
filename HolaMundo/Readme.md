@@ -6,16 +6,16 @@ Una vez que el usuario ingresa sus credenciales y presiona el botón de "Iniciar
 
 ### Capturas de Pantalla
 #### Pantalla Inicial
-
+<img width="394" height="319" alt="default" src="https://github.com/user-attachments/assets/e6a731cf-10bc-4839-b9d4-d5ee8e0846d4" />
 
 #### Pantalla de Validación para Usuario
-
+<img width="392" height="319" alt="username-wrong" src="https://github.com/user-attachments/assets/c1bbf457-6036-4e8b-bf46-4787a3e6b238" />
 
 #### Pantalla de Validación para Contraseña
-
+<img width="390" height="319" alt="password-wrong" src="https://github.com/user-attachments/assets/b863a16e-bb49-4bed-9072-d99eb122995d" />
 
 #### Pantalla de Bienvenida
-
+<img width="392" height="312" alt="success" src="https://github.com/user-attachments/assets/4a04250f-0ecf-4d94-970b-8f8630b8db4b" />
 
 ### Estructura del Proyecto
 El proyecto está estructurado de la siguiente manera:
