@@ -10,7 +10,7 @@ Recomiendo dos opciones para instalar MySQL Server en MacOS. La primera usando [
    ```bash
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
-2. **Actualizar Homebrew**: Asegúrate de que Homebrew esté actualizado ejecut
+2. **Actualizar Homebrew**: Asegúrate de que Homebrew esté actualizado ejecutando:
     ```bash
     brew update
     ```
