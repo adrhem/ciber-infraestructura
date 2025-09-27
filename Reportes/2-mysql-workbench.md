@@ -59,12 +59,15 @@ Recomiendo dos opciones para instalar MySQL Server en MacOS. La primera usando [
    docker ps
    ```
    Deberías ver el contenedor de MySQL en la lista de contenedores activos.
+   <img width="569" height="70" alt="docker" src="https://github.com/user-attachments/assets/57a5d9eb-4f23-46d3-8004-ed1551a30ef1" />
+
 
 ### Instalación de MySQL Workbench
 1. **Descargar MySQL Workbench**: Ve a la página oficial de [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) y descarga la versión para MacOS.
 2. **Instalar MySQL Workbench**: Abre el archivo descargado y sigue las instrucciones para instalar MySQL Workbench en tu sistema.
 3. **Abrir MySQL Workbench**: Una vez instalado, abre MySQL Workbench desde la carpeta de Aplicaciones o desde Launchpad.
 4. **Configurar una nueva conexión**:
+   <img width="830" height="496" alt="new-connection" src="https://github.com/user-attachments/assets/98926cc0-3e53-4c10-99a0-06ae8a602678" />
    - Haz clic en el ícono de `+` junto a "MySQL Connections".
    - En el campo "Connection Name", ingresa un nombre para tu conexión (por ejemplo, "Local MySQL").
    - En el campo "Hostname", ingresa `localhost`.
@@ -74,3 +77,4 @@ Recomiendo dos opciones para instalar MySQL Server en MacOS. La primera usando [
    - Haz clic en "Test Connection" para verificar que la conexión sea exitosa.
    - Si la conexión es exitosa, haz clic en "OK" para guardar la conexión.
 5. **Usar MySQL Workbench**: Ahora puedes usar MySQL Workbench para gestionar tu servidor MySQL local, crear bases de datos, ejecutar consultas SQL y mucho más.
+<img width="1019" height="717" alt="workbench" src="https://github.com/user-attachments/assets/561b4de7-282c-4e1d-b889-1bc718252e3d" />
