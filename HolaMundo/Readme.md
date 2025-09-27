@@ -21,3 +21,10 @@ Una vez que el usuario ingresa sus credenciales y presiona el botón de "Iniciar
 El proyecto está estructurado de la siguiente manera:
 - **MainPage.xaml**: Define la interfaz de usuario de la aplicación, incluyendo los campos de entrada y el botón así como un Label para mostrar mensajes al usuario.
 - **MainPage.xaml.cs**: Contiene la lógica de la aplicación, incluyendo la validación de las credenciales y la gestión de eventos.
+
+### Ejecución del Proyecto
+Para ejecutar el proyecto, asegúrate de tener instalado .NET Core 9.0, .NET MAUI. Debido a que este proyecto fue creado en un entorno MacOS, se recomienda utilizar un sistema operativo MacOS para su ejecución. Sin embargo, también es posible ejecutarlo en Windows con las configuraciones adecuadas. Luego, abre una terminal en el directorio del proyecto y ejecuta el siguiente comando:
+
+```bash
+dotnet build -t:Run -f net9.0-maccatalyst
+```
