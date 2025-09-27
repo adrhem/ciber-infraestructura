@@ -1,6 +1,6 @@
 ## Práctica 1: MAUI
 
-Para esta práctica, se ha creado un nuevo proyecto de .NET MAUI llamado "HolaMundo" usando el comando `dotnet new maui`. El objetivo principal de esta aplicación es crear una interfaz de usuario sencilla que muestre un dos campos de entrada para el usuario y contraseña, así como un botón para iniciar sesión. La validación de los campos se realiza mediante expresiones regulares para asegurar que el nombre de usuario y la contraseña cumplan con ciertos requisitos de seguridad.
+Para esta práctica, se ha creado un nuevo proyecto de .NET MAUI llamado "HolaMundo" usando el comando `dotnet new maui`. El objetivo principal de esta aplicación es crear una interfaz de usuario sencilla que muestre dos campos de entrada para el usuario y contraseña, así como un botón para iniciar sesión. La validación de los campos se realiza mediante expresiones regulares para asegurar que el nombre de usuario y la contraseña cumplan con ciertos requisitos de seguridad.
 
 Una vez que el usuario ingresa sus credenciales y presiona el botón de "Iniciar Sesión", la aplicación valida los datos ingresados. Si los datos son correctos, se muestra un mensaje de bienvenida; de lo contrario, se notifica al usuario sobre el error en las credenciales.
 
