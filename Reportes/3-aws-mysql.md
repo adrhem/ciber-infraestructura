@@ -4,6 +4,8 @@
 AWS (Amazon Web Services) es una plataforma de servicios en la nube que ofrece una amplia gama de servicios, incluyendo instancias de bases de datos gestionadas como Amazon RDS (Relational Database Service). Para conectar una aplicación o herramienta externa, como MySQL Workbench, a una instancia de base de datos en AWS; es necesario configurar las reglas de seguridad adecuadas para permitir el acceso remoto.
 
 ### Pasos para generar las reglas en AWS para conexión remota a MySQL
+<img width="745" height="185" alt="Screenshot 2025-10-04 at 5 29 01 p m" src="https://github.com/user-attachments/assets/e5463b56-e65b-448d-8674-637e58ec5ecd" />
+
 1. **Iniciar sesión en AWS Management Console**: Abre tu navegador web y ve a [AWS Management Console](https://aws.amazon.com/console/). Inicia sesión con tus credenciales de AWS.
 2. **Navegar a la sección de RDS**: En el panel de servicios, busca y selecciona "RDS" para acceder al panel de control de RDS.
 3. **Seleccionar la instancia de base de datos**: En el panel de RDS, haz clic en "Databases" en el menú de la izquierda. Luego, selecciona la instancia de base de datos MySQL a la que deseas conectarte.
@@ -19,6 +21,9 @@ AWS (Amazon Web Services) es una plataforma de servicios en la nube que ofrece u
    - **Port Range**: 3306
    - **Destination**: Puedes seleccionar "My IP" para permitir el acceso solo desde tu dirección IP, o "Anywhere" para permitir el acceso desde cualquier dirección IP (no recomendado para producción).
 7. **Guardar los cambios**: Haz clic en "Save rules" para aplicar los cambios en el grupo de seguridad.
+
+<img width="521" height="296" alt="Screenshot 2025-10-04 at 5 20 39 p m" src="https://github.com/user-attachments/assets/cb43e4e2-ff5d-4d2a-9cd3-98bfdd0c1f03" />
+
 
 ¡Listo! Ahora deberías poder conectarte a tu instancia de base de datos MySQL en AWS desde MySQL Workbench u otra herramienta externa utilizando la dirección endpoint de la instancia, el nombre de usuario y la contraseña configurados.
 
