@@ -1,4 +1,5 @@
 using CiberInfraestructuraApi.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CiberInfraestructuraApi.DataAccess
 {
@@ -11,14 +12,14 @@ namespace CiberInfraestructuraApi.DataAccess
       _context = context;
     }
 
-    public CatPersonal? GetPersonal(int id)
+    public async Task<CatPersonal?> GetPersonal(int id)
     {
-      return _context.CatPersonal.Find(id);
+      return await _context.CatPersonal.FindAsync(id);
     }
 
-    public List<CatPersonal> GetAllPersonal()
+    public async Task<List<CatPersonal>> GetAllPersonal()
     {
-      return _context.CatPersonal.ToList();
+      return await _context.CatPersonal.ToListAsync();
     }
   }
 }

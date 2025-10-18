@@ -1,31 +1,24 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using web_service_mvc.Models;
+using CiberInfraestructuraApi.DataAccess;
 
-namespace web_service_mvc.Controllers;
-
-public class CatPersonalController : Controller
+namespace CiberInfraestructuraApi.Controllers
 {
-    private readonly ILogger<CatPersonalController> _logger;
-
-    public CatPersonalController(ILogger<CatPersonalController> logger)
+    public class CatPersonalController : Controller
     {
-        _logger = logger;
+        private readonly IDataAccessProvider _dataAccessProvider;
+
+        public CatPersonalController(IDataAccessProvider dataAccessProvider)
+        {
+            _dataAccessProvider = dataAccessProvider;
+        }
+
+        [HttpGet("api/catpersonal")]
+        public async Task<IActionResult> GetAllCatPersonal()
+        {
+            var catPersonalList = await _dataAccessProvider.GetAllPersonal();
+            return Ok(catPersonalList);
+        }
     }
 
-    public IActionResult Index()
-    {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
 }
+

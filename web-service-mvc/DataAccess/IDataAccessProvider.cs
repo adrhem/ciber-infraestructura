@@ -4,7 +4,7 @@ namespace CiberInfraestructuraApi.DataAccess
 {
   public interface IDataAccessProvider
   {
-    CatPersonal? GetPersonal(int id);
-    List<CatPersonal> GetAllPersonal();
+    Task<CatPersonal?> GetPersonal(int id);
+    Task<List<CatPersonal>> GetAllPersonal();
   }
 }
