@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using CiberInfraestructuraApi.Models;
 using CiberInfraestructuraApi.DataAccess;
 
 namespace CiberInfraestructuraApi.Controllers
@@ -30,6 +31,18 @@ namespace CiberInfraestructuraApi.Controllers
                 return NotFound();
             }
             return Ok(catPersonal);
+        }
+
+        [HttpPost("create")]
+        public async Task<IActionResult> CreateCatPersonal([FromBody] CatPersonal catPersonal)
+        {
+            if (catPersonal == null)
+            {
+                return BadRequest();
+            }
+
+            var createdCatPersonal = await _dataAccessProvider.AddPersonal(catPersonal);
+            return CreatedAtAction(nameof(GetCatPersonal), new { id = createdCatPersonal.ID }, createdCatPersonal);
         }
     }
 }

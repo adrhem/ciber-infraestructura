@@ -21,5 +21,18 @@ namespace CiberInfraestructuraApi.DataAccess
     {
       return await _context.CatPersonal.ToListAsync();
     }
+
+    public async Task<CatPersonal> AddPersonal(CatPersonal catPersonal)
+    {
+      // Validations
+      if (string.IsNullOrWhiteSpace(catPersonal.Nombre) || string.IsNullOrWhiteSpace(catPersonal.Cargo))
+      {
+        throw new ArgumentException("Invalid personal data");
+      }
+
+      _context.CatPersonal.Add(catPersonal);
+      await _context.SaveChangesAsync();
+      return catPersonal;
+    }
   }
 }
