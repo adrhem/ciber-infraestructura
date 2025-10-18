@@ -4,11 +4,11 @@ using web_service_mvc.Models;
 
 namespace web_service_mvc.Controllers;
 
-public class HomeController : Controller
+public class CatPersonalController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<CatPersonalController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public CatPersonalController(ILogger<CatPersonalController> logger)
     {
         _logger = logger;
     }
