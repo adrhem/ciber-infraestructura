@@ -44,14 +44,20 @@ Las operaciones deberán retornar una respuesta en JSON.
 ## Pruebas de las operaciones
 Puedes usar herramientas como Postman o cURL para probar las operaciones del web service.
 - **GET Todos los registros**:
+<img width="738" height="440" alt="list" src="https://github.com/user-attachments/assets/0877d1b2-1e9a-462d-94f7-86ca27ad82d5" />
+
    ```bash
    curl -X GET http://localhost:5229/api/CatPersonal
    ```
 - **GET Registro por ID**:
+<img width="693" height="219" alt="get" src="https://github.com/user-attachments/assets/c0e3cebd-9806-4677-a479-aa1e03af8921" />
+
    ```bash
    curl -X GET http://localhost:5229/api/CatPersonal/{id}
    ```
 - **POST Nuevo registro**:
+<img width="693" height="208" alt="create" src="https://github.com/user-attachments/assets/8bb4291b-b444-415e-92a1-c716a66cf997" />
+
    ```bash
    curl -X POST http://localhost:5229/api/CatPersonal/create -H "Content-Type: application/json" \ 
       -d '{"nombre":"Juan","cargo":"Desarrollador"}'
@@ -101,9 +107,13 @@ Puedes usar herramientas como Postman o cURL para probar las operaciones del web
     heroku git:remote -a nombre-de-tu-app
     ```
 9. En el log de Heroku, podrás ver la URL donde está desplegada tu aplicación. Por defecto, será algo como `https://nombre-de-tu-app-<random_string>.herokuapp.com`.
+<img width="798" height="129" alt="heroku" src="https://github.com/user-attachments/assets/96ec4526-5656-46dd-a01d-49f9719a91a6" />
+
 
 ## Visualización de datos en PostgreSQL
 Para visualizar y administrar los datos en tu base de datos PostgreSQL, puedes usar herramientas como [pgAdmin](https://www.pgadmin.org/) o [DBeaver](https://dbeaver.io/). Además el Addon de Heroku PostgreSQL incluye un comando llamado `heroku pg:psql` que te permite conectarte a la base de datos desde la terminal. Para usarlo, ejecuta el siguiente comando:
 ```bash
 heroku pg:psql <nombre-de-tu-servicio> --app nombre-de-tu-app
 ```
+<img width="622" height="195" alt="psql" src="https://github.com/user-attachments/assets/47601815-e855-4d1a-bcfa-8e3bb2d66e5b" />
+
