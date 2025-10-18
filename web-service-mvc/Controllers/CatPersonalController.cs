@@ -3,7 +3,9 @@ using CiberInfraestructuraApi.DataAccess;
 
 namespace CiberInfraestructuraApi.Controllers
 {
-    public class CatPersonalController : Controller
+    [ApiController]
+    [Route("api/[controller]")]
+    public class CatPersonalController : ControllerBase
     {
         private readonly IDataAccessProvider _dataAccessProvider;
 
@@ -12,13 +14,23 @@ namespace CiberInfraestructuraApi.Controllers
             _dataAccessProvider = dataAccessProvider;
         }
 
-        [HttpGet("api/catpersonal")]
+        [HttpGet]
         public async Task<IActionResult> GetAllCatPersonal()
         {
             var catPersonalList = await _dataAccessProvider.GetAllPersonal();
             return Ok(catPersonalList);
         }
-    }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetCatPersonal(int id)
+        {
+            var catPersonal = await _dataAccessProvider.GetPersonal(id);
+            if (catPersonal == null)
+            {
+                return NotFound();
+            }
+            return Ok(catPersonal);
+        }
+    }
 }
 
