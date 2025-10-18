@@ -9,3 +9,8 @@ Tareas y proyectos relacionados a la clase de Ciber Infraestructura en la maestr
 ### Tarea 1: Hola Mundo
 Repositorio con la práctica 1 de la materia de Ciber Infraestructura. Pantalla de inicio de sesión con validación de usuario y contraseña usando .NET MAUI.
 - [HolaMundo](https://github.com/adrhem/ciber-infraestructura/tree/main/HolaMundo).
+
+
+### Tarea: Generación de un web service REST
+Repositorio con con la practica 2 de la materia de Ciber Infraestructura. Web service REST usando .NET Core y conexión a base de datos PostgreSQL usando Heroku.
+- [WebService](https://github.com/adrhem/ciber-infraestructura/tree/main/web-service-mvc).
